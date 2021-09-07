@@ -1,0 +1,30 @@
+$body-bg: whitesmoke;
+$border-radius-lg: 10px;
+$light: whitesmoke;
+
+:root {
+  --sidebar: #ffffff;
+  --navbar: whitesmoke;
+  --form-bg-color: whitesmoke;
+  --form-hover-color: #eeeeee;
+  --form-placeholder-color: rgba(54, 54, 54, 0.3);
+}
+
+:root[data-theme='dark'] {
+  $body-background-color: #000000;
+  $base-input-color: #313131;
+  $base-input-color-hover: #414141;
+  $base-content-color: #212121;
+  $base-dark-color: #c9c9c9;
+
+  --sidebar: #{$base-content-color};
+  --sidebar-nav: #{$base-input-color};
+  --sidebar-link: #{$base-dark-color};
+  --navbar: #{$base-content-color};
+  --bs-body-color: #{$base-dark-color};
+  --bs-body-bg: #{$body-background-color};
+  --form-bg-color: #{$base-input-color};
+  --form-color: #{$base-input-color};
+  --form-hover-color: #{$base-input-color-hover};
+  --form-placeholder-color: #{$base-dark-color};
+}

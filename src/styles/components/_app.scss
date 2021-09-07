@@ -1,0 +1,27 @@
+@import 'sidebar';
+@import 'navbar';
+@import 'table';
+@import 'form';
+
+.app {
+  transition: margin-left 300ms ease;
+  margin-left: 0;
+
+  &.open {
+    margin-left: 260px;
+  }
+
+  .alert {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .app {
+    &.open {
+      margin-left: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.navbar {
+  .navbar-toggler {
+    outline: none;
+    box-shadow: none;
+    &:hover {
+      background-color: #fafafa;
+    }
+
+    &-icon {
+      width: 1rem !important;
+    }
+  }
+}
