@@ -1,0 +1,24 @@
+.form-control {
+  background-color: var(--form-bg-color);
+  color: var(--form-color);
+
+  &:hover, &:focus {
+    background-color: var(--form-hover-color);
+  }
+
+  &::placeholder {
+    color: var(--form-placeholder-color);
+  }
+
+  &.is-invalid {
+    &:hover {
+      box-shadow: 0 0 0 0.25rem #dc354540;
+    }
+  }
+
+  &-invalid {
+    font-size: .75rem;
+    top: 5px;
+    color: $red;
+  }
+}
